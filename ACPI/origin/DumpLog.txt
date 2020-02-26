@@ -1,0 +1,61 @@
+10:075  1:758  Found UEFI Acpi 2.0 RSDP at 98FFE014
+10:075  0:000  Saving ACPI tables from RSDP 98FFE014 to EFI\CLOVER\ACPI\origin ...
+10:075  0:000   98FFE014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+10:084  0:009    (Xsdt: 98FC5188, Rsdt: 98FC50C4)
+10:084  0:000    98FC5188: 'XSDT', 'SLIC-MPC', Rev: 1, Len: 204 -> XSDT.aml
+10:092  0:007    98FC50C4: 'RSDT', 'SLIC-MPC', Rev: 1, Len: 120 -> RSDT.aml
+10:100  0:007    Tables in Xsdt: 21
+10:100  0:000    0. 98FEF000: 'FACP', 'SLIC-MPC', Rev: 5, Len: 268 -> FACP.aml
+10:107  0:007        (Dsdt: 98FDB000, Facs: 98F87000, XDsdt: 98FDB000, XFacs: 0)
+10:107  0:000        98FDB000: 'DSDT', 'SLIC-MPC', Rev: 2, Len: 62886 -> DSDT.aml
+10:120  0:012        98F87000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+10:130  0:009    1. 98FFD000: 'UEFI', 'INSYDE', Rev: 1, Len: 566 -> UEFI.aml
+10:138  0:008    2. 98FFC000: 'UEFI', 'INSYDE', Rev: 1, Len: 66 -> UEFI.aml
+10:147  0:008    3. 98FF5000: 'SSDT', 'INSYDE', Rev: 1, Len: 26063 -> SSDT-0-INSYDE.aml
+10:157  0:009    4. 98FF3000: 'ASF!', 'INSYDE', Rev: 32, Len: 165 -> ASF!.aml
+10:165  0:008    5. 98FF2000: 'ASPT', 'INSYDE', Rev: 7, Len: 52 -> ASPT.aml
+10:175  0:009    6. 98FF1000: 'BOOT', 'INSYDE', Rev: 1, Len: 40 -> BOOT.aml
+10:184  0:009    7. 98FF0000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52 -> DBGP.aml
+10:193  0:008    8. 98FEE000: 'HPET', 'INSYDE', Rev: 1, Len: 56 -> HPET.aml
+10:202  0:009    9. 98FED000: 'LPIT', 'INSYDE', Rev: 1, Len: 148 -> LPIT.aml
+10:211  0:008    10. 98FEC000: 'APIC', 'SLIC-MPC', Rev: 3, Len: 140 -> APIC.aml
+10:220  0:008    11. 98FEB000: 'MCFG', 'INSYDE', Rev: 1, Len: 60 -> MCFG.aml
+10:228  0:008    12. 98FD7000: 'SSDT', 'INSYDE', Rev: 2, Len: 12291 -> SSDT-1-INSYDE.aml
+10:237  0:008    13. 98FD6000: 'SSDT', 'INSYDE', Rev: 2, Len: 3090 -> SSDT-2-INSYDE.aml
+10:246  0:009    14. 98FD5000: 'SSDT', 'INSYDE', Rev: 2, Len: 1337 -> SSDT-3-INSYDE.aml
+10:256  0:009    15. 98FD4000: 'SSDT', 'INSYDE', Rev: 2, Len: 2932 -> SSDT-4-INSYDE.aml (Found hidden SSDT 4 pcs)
+10:265  0:009        * 89D95018: '', '	', Rev: 0, Len: 0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+10:265  0:000        * 98BB0618: 'SSDT', 'ApIst', Rev: 2, Len: 1450  53 53 44 54 AA 05 00 00 02 D2 50 6D 52 65 66 00 Internal length = 1450 -> SSDT-x4_0-ApIst.aml
+10:274  0:009        * 98BAF918: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 979  53 53 44 54 D3 03 00 00 02 B2 50 6D 52 65 66 00 Internal length = 979 -> SSDT-x4_1-Cpu0Cst.aml
+10:283  0:009        * 98BAED98: 'SSDT', 'ApCst', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 EE 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x4_2-ApCst.aml
+10:293  0:009  
+10:293  0:000    16. 98FCD000: 'SSDT', 'INSYDE', Rev: 2, Len: 25178 -> SSDT-5-INSYDE.aml
+10:304  0:011    17. 98FC9000: 'SSDT', 'INSYDE', Rev: 1, Len: 12467 -> SSDT-6-INSYDE.aml
+10:312  0:008    18. 98FC8000: 'DMAR', 'INSYDE', Rev: 1, Len: 176 -> DMAR.aml
+10:319  0:007    19. 98FC7000: 'FPDT', 'SLIC-MPC', Rev: 1, Len: 68 -> FPDT.aml
+10:328  0:008    20. 98FC6000: 'BGRT', 'INSYDE', Rev: 1, Len: 56 -> BGRT.aml
+10:336  0:008    Tables in Rsdt: 21
+10:336  0:000    0. 98FEF000: 'FACP', 'SLIC-MPC', Rev: 5, Len: 268
+10:336  0:000        (Dsdt: 98FDB000, Facs: 98F87000, XDsdt: 98FDB000, XFacs: 0)
+10:336  0:000        98FDB000: 'DSDT', 'SLIC-MPC', Rev: 2, Len: 62886
+10:338  0:001        98F87000: 'FACS', Ver: 2, Len: 64
+10:338  0:000    1. 98FFD000: 'UEFI', 'INSYDE', Rev: 1, Len: 566
+10:338  0:000    2. 98FFC000: 'UEFI', 'INSYDE', Rev: 1, Len: 66
+10:338  0:000    3. 98FF5000: 'SSDT', 'INSYDE', Rev: 1, Len: 26063
+10:338  0:000    4. 98FF3000: 'ASF!', 'INSYDE', Rev: 32, Len: 165
+10:338  0:000    5. 98FF2000: 'ASPT', 'INSYDE', Rev: 7, Len: 52
+10:338  0:000    6. 98FF1000: 'BOOT', 'INSYDE', Rev: 1, Len: 40
+10:338  0:000    7. 98FF0000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52
+10:338  0:000    8. 98FEE000: 'HPET', 'INSYDE', Rev: 1, Len: 56
+10:338  0:000    9. 98FED000: 'LPIT', 'INSYDE', Rev: 1, Len: 148
+10:338  0:000    10. 98FEC000: 'APIC', 'SLIC-MPC', Rev: 3, Len: 140
+10:338  0:000    11. 98FEB000: 'MCFG', 'INSYDE', Rev: 1, Len: 60
+10:338  0:000    12. 98FD7000: 'SSDT', 'INSYDE', Rev: 2, Len: 12291
+10:338  0:000    13. 98FD6000: 'SSDT', 'INSYDE', Rev: 2, Len: 3090
+10:338  0:000    14. 98FD5000: 'SSDT', 'INSYDE', Rev: 2, Len: 1337
+10:338  0:000    15. 98FD4000: 'SSDT', 'INSYDE', Rev: 2, Len: 2932
+10:338  0:000    16. 98FCD000: 'SSDT', 'INSYDE', Rev: 2, Len: 25178
+10:338  0:000    17. 98FC9000: 'SSDT', 'INSYDE', Rev: 1, Len: 12467
+10:338  0:000    18. 98FC8000: 'DMAR', 'INSYDE', Rev: 1, Len: 176
+10:338  0:000    19. 98FC7000: 'FPDT', 'SLIC-MPC', Rev: 1, Len: 68
+10:338  0:000    20. 98FC6000: 'BGRT', 'INSYDE', Rev: 1, Len: 56
