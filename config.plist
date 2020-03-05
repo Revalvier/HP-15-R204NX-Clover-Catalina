@@ -30,9 +30,9 @@
 				<key>FixDarwin7</key>
 				<true/>
 				<key>FixDisplay</key>
-				<true/>
+				<false/>
 				<key>FixHDA</key>
-				<true/>
+				<false/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
@@ -70,7 +70,7 @@
 					<key>Comment</key>
 					<string>Rename HDAS to HDEF</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					SERBUw==
@@ -182,7 +182,7 @@
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					R0ZYMA==
@@ -239,7 +239,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 darkwake=0 en0 -v IOBuiltin=Yes slide=0 bsdname -disablegfxfirmware kext-dev-mode=1 -wegnoegpu</string>
+		<string>dart=0 nv_disable=1 darkwake=0 bsdname en0 IOBuiltin=Yes slide=0 kext-dev-mode=1 alcid=3 -wegnoegpu</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>Debug</key>
@@ -268,62 +268,68 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>#AddProperties</key>
-		<array>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Key</key>
-				<string>AAPL,HasPanel</string>
-				<key>Value</key>
-				<data>
-				AQAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Key</key>
-				<string>AAPL,Haslid</string>
-				<key>Value</key>
-				<data>
-				AQAAAA==
-				</data>
-			</dict>
-		</array>
-		<key>#FakeID</key>
-		<dict>
-			<key>#ATI</key>
-			<string>0x67501002</string>
-			<key>#IMEI</key>
-			<string>0x1e208086</string>
-			<key>#IntelGFX</key>
-			<string>0x01268086</string>
-			<key>#LAN</key>
-			<string>0x100E8086</string>
-			<key>#NVidia</key>
-			<string>0x11de10de</string>
-			<key>#SATA</key>
-			<string>0x25628086</string>
-			<key>#WIFI</key>
-			<string>0x431214e4</string>
-			<key>#XHCI</key>
-			<string>0x0</string>
-		</dict>
-		<key>#ForceHPET</key>
-		<false/>
-		<key>#Inject</key>
-		<false/>
-		<key>#Properties</key>
-		<string>7a00000001000000010000006e0000000200000002010c00d041030a0000000001010600001b7fff040028000000500069006e0043006f006e00660069006700750072006100740069006f006e00730000000800000001080100180000006c00610079006f00750074002d00690064000000080000000c000000</string>
 		<key>#SetIntelBacklight</key>
 		<false/>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>3</integer>
+			<string>NO</string>
 			<key>ResetHDA</key>
-			<true/>
+			<false/>
+		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AgAWFg==
+				</data>
+				<key>device-id</key>
+				<data>
+				FhYAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-busid</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
+				</data>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAwAQ==
+				</data>
+			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
 		<true/>
@@ -373,7 +379,7 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
@@ -381,8 +387,6 @@
 		<false/>
 		<key>NvidiaSingle</key>
 		<false/>
-		<key>ig-platform-id</key>
-		<string>0x16160002</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
